@@ -2,6 +2,9 @@
 # ------------------------------------------------------------------
 # [Author] Paudie ORiordan
 #          sample bash script to walk vSphere JSON API using curl
+#          not supported by VMware
+#          not supported for production
+#          use at your own risk
 # ------------------------------------------------------------------
 VERSION=0.2.0
 # --- variables -------------------------------------------
