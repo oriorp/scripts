@@ -1,11 +1,17 @@
+
+# ------------------------------------------------------------------
+# [Author] Paudie ORiordan
+#          sample bash script use govc to enable vSAN Witness Traffic on vSAN data nodes mgmt interfaces 
+#          not supported by VMware
+#          not supported for production
+#          use at your own risk
+# ------------------------------------------------------------------
+VERSION=0.0.1
 #/bin/bash
 export GOVC_INSECURE=1 # Don't verify SSL certs on vCenter
-export GOVC_URL=vcsa.vcf.vsanpe.vmware.com # vCenter IP/FQDN
+export GOVC_URL=<VC-FQDN> # vCenter IP/FQDN
 export GOVC_USERNAME=administrator@vsphere.local # vCenter username
-export GOVC_PASSWORD='P@ssw0rd123!' # vCenter password
-export GOVC_DATASTORE='vsanDatastore' # Default datastore to deploy to
-export GOVC_NETWORK='trunk' # Default network to deploy to
-export GOVC_RESOURCE_POOL='Cluster/Resources' # Default resource pool to deploy to
+export GOVC_PASSWORD='<pass>' # vCenter password
 export GOVC_DATACENTER='DataCenter' # I have multiple DCs in this VC, so i'm specifying the default here
 export govc=/usr/local/bin/govc
 echo using the following variables...
